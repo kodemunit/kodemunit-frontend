@@ -1,0 +1,41 @@
+
+@import "./_variables"
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background: #161825
+    color: #ffffff
+    scroll-behavior: smooth
+
+img
+    max-width: 100%
+
+ul
+    list-style: none
+
+a
+    text-decoration: none
+
+.container
+    margin: auto
+
+.btn
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 35px
+    width: 180px
+    transition: .3s
+.btn-primary
+    background: $primary-color
+    color: #ffffff
+    box-shadow: -2px -4px 4px rgba(242, 232, 232, 0.02), 0px 4px 4px rgba(0, 0, 0, 0.25), inset -2px -2px 4px rgba(0, 0, 0, 0.3), inset 2px 2px 4px rgba(248, 243, 243, 0.1)
+.btn.active-btn
+    background: #ffffff
+    color: #000000
+
+@import "./components/_navbar.sass"

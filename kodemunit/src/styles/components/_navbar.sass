@@ -1,0 +1,49 @@
+header.header
+    background: $nav-bg
+    height: 60px
+    width: 100%
+    .container
+        width: 90%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .logo
+            img
+                height: auto
+                width: 180px
+        nav
+            display: flex
+            justify-content: space-between
+            width: 100%
+            ul
+                display: flex
+                justify-content: flex-end
+                &.navigation-links
+                    margin-left: calc( -100% + 700px )
+                li
+                    height: 100%
+                    display: flex
+                    align-items: center
+                    margin-left: 25px
+                    a.link
+                        color: #ffffffb7
+                        padding: 5px 0
+                        position: relative
+                        transition: .3s
+                        &::before
+                            content: ""
+                            position: absolute
+                            left: 0
+                            bottom: 0
+                            height: 0
+                            width: 100%
+                            background: $primary-color
+                            transition: .25s
+                        &.active, &:hover
+                            &::before
+                                height: 4px
+                                width: 100%
+                        &.active
+                            &::before
+                                height: 1px
