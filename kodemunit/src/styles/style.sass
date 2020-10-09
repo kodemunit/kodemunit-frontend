@@ -10,6 +10,7 @@ body
     background: #161825
     color: #ffffff
     scroll-behavior: smooth
+    font-family: Roboto
 
 img
     max-width: 100%
@@ -22,6 +23,8 @@ a
 
 .container
     margin: auto
+    width: 80%
+    max-width: 1400px
 
 .btn
     display: flex
@@ -34,8 +37,12 @@ a
     background: $primary-color
     color: #ffffff
     box-shadow: -2px -4px 4px rgba(242, 232, 232, 0.02), 0px 4px 4px rgba(0, 0, 0, 0.25), inset -2px -2px 4px rgba(0, 0, 0, 0.3), inset 2px 2px 4px rgba(248, 243, 243, 0.1)
-.btn.active-btn
+.btn.btn-secondary
     background: #ffffff
     color: #000000
 
 @import "./components/_navbar.sass"
+
+// home
+@import "./components/home/_banner"
+@import "./components/home/_services"
