@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 
 const Banner = () => {
     return (
-        <div className="banner">
+        <div className="home-banner">
             <div className="container">
                 <h1>We Convert Your Idea<br />Into Something That's Working.</h1>
                 <p>

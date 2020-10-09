@@ -149,7 +149,7 @@ header.header .container nav ul li a.link.active::before {
   height: 1px;
 }
 
-.banner {
+.home-banner {
   min-height: calc( 110vh - 60px);
   background: linear-gradient(182deg, rgba(33, 38, 67, 0.8) -0.13%, #161825 90%), url("../assets/images/hero-bg.png") no-repeat bottom center;
   background-size: cover;
@@ -165,7 +165,7 @@ header.header .container nav ul li a.link.active::before {
           justify-content: center;
 }
 
-.banner .container {
+.home-banner .container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,7 +180,7 @@ header.header .container nav ul li a.link.active::before {
   padding: 100px 0;
 }
 
-.banner .container h1 {
+.home-banner .container h1 {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
   font-size: 60px;
   font-size: clamp(48px, 5vw, 70px);
@@ -195,7 +195,7 @@ header.header .container nav ul li a.link.active::before {
   font-weight: normal;
 }
 
-.banner .container p {
+.home-banner .container p {
   margin-bottom: 40px;
   font-size: clamp(1em, 2vw, 1.2em);
   line-height: 30px;
@@ -203,13 +203,13 @@ header.header .container nav ul li a.link.active::before {
   color: #99D5EC;
 }
 
-.banner .container .btns {
+.home-banner .container .btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.banner .container .btns a {
+.home-banner .container .btns a {
   margin-right: 30px;
 }
 

@@ -1,13 +1,20 @@
-import React from 'react'
-import {Link} from "react-router-dom"
+import React from "react"
+import { Link } from "react-router-dom"
+
+// components
+import Banner from "../../../components/Banner"
 
 const ProductsPage = () => {
-    return (
-        <div>
-            Products page
-            <Link to="/products/kodemunit">Kodemunit</Link>
-        </div>
-    )
+  return (
+    <div>
+      <Banner
+        title1="Discover Our "
+        title2="Different Products."
+        descr="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend ultrices sit ac, donec libero lectus pellentesque. Viverra vestibulum netus lectus lacus pretium risus et faucibus volutpat."
+      ></Banner>
+      <Link to="/products/kodemunit">Kodemunit</Link>
+    </div>
+  )
 }
 
 export default ProductsPage
