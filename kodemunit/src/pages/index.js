@@ -6,12 +6,12 @@ import Services from "../components/home/Services"
 
 const Home = () => {
   return (
-    <>
+    <div className="page home-page">
       <Banner />
       <main>
         <Services />
       </main>
-    </>
+    </div>
   )
 }
 
