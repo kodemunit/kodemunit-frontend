@@ -6,7 +6,7 @@ import Services from "../components/home/Services"
 import Projects from "../components/home/Projects"
 import Clients from "../components/home/Clients"
 import Testimonies from "../components/home/Testimonies"
-import Products from "../components/home/Products"
+// import Products from "../components/home/Products"
 
 const Home = () => {
   return (
