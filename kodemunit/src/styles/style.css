@@ -283,7 +283,7 @@ header.header .container nav ul li a.link.active::before {
 }
 
 .services h2 {
-  font-size: clamp(38px, 5vw, 50px);
+  font-size: clamp(38px, 5vw, 48px);
   margin-bottom: 40px;
 }
 
@@ -317,19 +317,20 @@ header.header .container nav ul li a.link.active::before {
 
 .services .container .services-list h2 {
   margin-bottom: 30px;
-  font-size: clamp(38px, 5vw, 40px);
+  font-size: clamp(34px, 5vw, 36px);
   text-align: right;
 }
 
 .services .container .services-list ul li {
   margin-bottom: 20px;
+  font-size: clamp(16px, 2vw, 20px);
   text-align: right;
   background: radial-gradient(50% 50% at 50.1% 50%, #2C2F43 0%, #141622 100%);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(255, 255, 255, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(255, 255, 255, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 15px 20px;
   width: 100%;
-  min-width: 300px;
+  min-width: 330px;
   color: #ffffffc4;
 }
 
