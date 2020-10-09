@@ -150,6 +150,62 @@ header.header .container nav ul li a.link.active::before {
   height: 1px;
 }
 
+@media screen and (max-width: 992px) {
+  header.header .container .logo img {
+    height: 20px;
+    width: auto;
+  }
+  header.header .container nav ul.navigation-links {
+    margin-left: calc( -100% + 600px);
+  }
+  header.header .container nav ul li {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header.header .container .logo img {
+    height: 20px;
+    width: auto;
+  }
+  header.header .container nav {
+    display: none;
+  }
+  header.header .container .burger {
+    height: 40px;
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.header .container .burger span {
+    height: 2px;
+    width: 30px;
+    background: #ffffff;
+    position: relative;
+  }
+  header.header .container .burger span::before, header.header .container .burger span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 30px;
+    background: #ffffff;
+  }
+  header.header .container .burger span::before {
+    top: -9px;
+  }
+  header.header .container .burger span::after {
+    top: 9px;
+  }
+}
+
 .banner {
   min-height: calc( 100vh - 60px);
   display: -webkit-box;
@@ -474,6 +530,8 @@ footer .copy-right .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .services .container .description {

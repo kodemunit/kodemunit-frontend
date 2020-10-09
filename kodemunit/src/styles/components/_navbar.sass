@@ -50,3 +50,49 @@ header.header
                         &.active
                             &::before
                                 height: 1px
+
+@media screen and ( max-width: 992px )
+    header.header
+        .container
+            .logo
+                img
+                    height: 20px
+                    width: auto
+            nav
+                ul
+                    &.navigation-links
+                        margin-left: calc( -100% + 600px )
+                    li
+                        margin-left: 20px
+
+@media screen and ( max-width: 768px )
+    header.header
+        .container
+            .logo
+                img
+                    height: 20px
+                    width: auto
+            nav
+                display: none
+            .burger
+                height: 40px
+                width: 40px
+                display: flex
+                justify-content: center
+                align-items: center
+                span
+                    height: 2px
+                    width: 30px
+                    background: #ffffff
+                    position: relative
+                    &::before, &::after
+                        content: ""
+                        position: absolute
+                        left: 0
+                        height: 1px
+                        width: 30px
+                        background: #ffffff
+                    &::before
+                        top: -9px
+                    &::after
+                        top: 9px
