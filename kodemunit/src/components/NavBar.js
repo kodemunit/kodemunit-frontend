@@ -15,7 +15,7 @@ const NavBar = () => {
             </div>
             <ul className="navigation-links">
                 <li>
-                    <NavLink exact={true} to="/work" className="link">
+                    <NavLink exact={true} to="/work-showcase" className="link">
                         Work
                     </NavLink>
                 </li>
@@ -25,7 +25,7 @@ const NavBar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink exact={true} to="/services" className="link">
+                    <NavLink exact={true} to="/our-services" className="link">
                         Services
                     </NavLink>
                 </li>
