@@ -1,9 +1,9 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 // import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube} from "react-icons/all"
 
 // logo b/w
-import logo from "../assets/images/bw-logo.png"
+// import logo from "../assets/images/bw-logo.png"
 
 const Footer = ({quote, author}) => {
     return (
