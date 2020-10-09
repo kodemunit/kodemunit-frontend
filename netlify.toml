@@ -1,0 +1,4 @@
+[build]
+base = "kodemunit/"
+publish = "/build/"
+command = "npm run build"
