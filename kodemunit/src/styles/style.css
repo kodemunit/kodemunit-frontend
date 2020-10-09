@@ -214,6 +214,157 @@ header.header .container nav ul li a.link.active::before {
   margin-right: 30px;
 }
 
+footer .container {
+  text-align: center;
+}
+
+footer .container div {
+  padding: 20px 0;
+}
+
+footer .container .quote {
+  padding: 20px 0;
+  max-width: 700px;
+  margin: auto;
+}
+
+footer .container .quote blockquote {
+  padding: 30px 0;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-style: italic;
+}
+
+footer .container .quote blockquote cite {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1rem;
+  font-style: normal;
+}
+
+footer .container .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+footer .container .social-media div.group {
+  display: inline-block;
+  padding: 0 10px;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05);
+}
+
+footer .container .social-media div.group p {
+  font-size: 1.2rem;
+}
+
+footer .container .social-media div.group div {
+  display: inline-block;
+}
+
+footer .container .social-media div.group div a {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 10px 15px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+footer .container .social-media div.group div a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+footer .quick-links {
+  padding: 20px 0;
+}
+
+footer .quick-links .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+footer .quick-links .container ul img {
+  opacity: 1;
+  height: 30px;
+  width: auto;
+  margin: 0 15px;
+}
+
+footer .quick-links .container ul li {
+  margin: 20px 15px;
+}
+
+footer .quick-links .container ul li a {
+  color: #fff;
+  text-decoration: none;
+  opacity: .7;
+}
+
+footer .quick-links .container ul li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+footer .quick-links .container ul li a.btn.btn-tertiary {
+  opacity: 1;
+}
+
+footer .quick-links .container ul li a.btn.btn-tertiary:hover {
+  text-decoration: none;
+}
+
+footer .copy-right {
+  padding: 30px 0;
+}
+
+footer .copy-right .container {
+  opacity: 1;
+  font-size: .9rem;
+}
+
+@media screen and (max-width: 700px) {
+  .container .quote {
+    width: 100%;
+  }
+  .container .quote blockquote cite {
+    right: 0;
+  }
+  .quick-links .container ul img {
+    opacity: 1;
+    height: 30px;
+  }
+  .quick-links .container ul li {
+    margin: 20px 10px !important;
+  }
+  .copy-right .container {
+    font-size: .8rem;
+  }
+}
+
 .home-banner {
   min-height: calc( 110vh - 60px);
   background: linear-gradient(182deg, rgba(33, 38, 67, 0.8) -0.13%, #161825 90%), url("../assets/images/hero-bg.png") no-repeat bottom center;

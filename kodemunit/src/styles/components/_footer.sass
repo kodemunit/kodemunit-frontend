@@ -1,0 +1,101 @@
+footer
+    .container
+        text-align: center
+        div
+            padding: 20px 0
+        .quote
+            padding: 20px 0
+            max-width: 700px
+            margin: auto
+            blockquote
+                padding: 30px 0
+                position: relative
+                font-size: 1rem
+                line-height: 1.6rem
+                font-style: italic
+                cite
+                    position: absolute
+                    right: 0
+                    bottom: 0
+                    font-size: 1rem
+                    // color: $tertiary-color
+                    font-style: normal
+        .social-media
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-wrap: wrap
+            margin-bottom: 20px
+            div.group
+                display: inline-block
+                padding: 0 10px
+                box-shadow: 0px 2px 1px rgba(0, 0, 0, .05)
+                p
+                    font-size: 1.2rem
+                div
+                    display: inline-block
+                    a
+                        display: inline-block
+                        font-size: 1.5rem
+                        margin: 10px 15px
+                        // color: $secondary-color
+                        transition: .2s ease-in-out
+                        &:hover
+                            transform: scale(1.2)
+                            // color: $primary-color
+                            
+    .quick-links
+        padding: 20px 0
+        // background: $tertiary-color
+        .container
+            ul
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-wrap: wrap
+                align-content: center
+                img
+                    opacity: 1
+                    height: 30px
+                    width: auto
+                    margin: 0 15px
+                li
+                    margin: 20px 15px
+                    a
+                        color: #fff
+                        text-decoration: none
+                        opacity: .7
+                        &:hover
+                            opacity: 1
+                            text-decoration: underline
+                        &.btn.btn-tertiary
+                            opacity: 1
+                            // color: $tertiary-color
+                            &:hover
+                                text-decoration: none
+    .copy-right
+        padding: 30px 0
+        .container
+            opacity: 1
+            font-size: .9rem
+
+//mobile
+@media screen and ( max-width: 700px )
+    footer
+    .container
+        .quote
+            width: 100%
+            blockquote
+                cite
+                    right: 0
+    .quick-links
+        .container
+            ul
+                img
+                    opacity: 1
+                    height: 30px
+                li
+                    margin: 20px 10px !important
+    .copy-right
+        .container
+            font-size: .8rem
