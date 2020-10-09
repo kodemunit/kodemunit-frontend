@@ -193,9 +193,11 @@ header.header .container nav ul li a.link.active::before {
   header.header .container .burger span::before, header.header .container .burger span::after {
     content: "";
     position: absolute;
-    left: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     height: 1px;
-    width: 30px;
+    width: 27px;
     background: #ffffff;
   }
   header.header .container .burger span::before {
