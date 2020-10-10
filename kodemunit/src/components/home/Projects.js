@@ -20,7 +20,7 @@ const Projects = () => {
                         <picture>
                             <source media="(min-width:650px)" srcset="" />
                             <source media="(min-width:465px)" srcset="" />
-                            <img src="" alt="Flowers" style="width:auto;">
+                            <img src="" alt="Flowers" style="width:auto;" />
                         </picture>
                         <div className="project details">
                             
