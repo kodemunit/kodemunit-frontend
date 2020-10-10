@@ -762,7 +762,7 @@ footer .copy-right .container {
 }
 
 .service-list .container h3 {
-  font-size: clamp(14px, 4vw, 20px);
+  font-size: clamp(16px, 4vw, 20px);
 }
 
 .service-list .container .showcase ul {
@@ -770,7 +770,7 @@ footer .copy-right .container {
 }
 
 .service-list .container .showcase ul li {
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .service-list .container .showcase ul li h3 {
@@ -780,13 +780,14 @@ footer .copy-right .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-weight: normal;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .service-list .container .showcase ul li p {
-  font-size: clamp(16px, 2vw, 18px);
+  font-size: clamp(14px, 2vw, 18px);
   line-height: 24px;
   height: 0;
   overflow: hidden;
