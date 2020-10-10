@@ -522,6 +522,45 @@ footer .copy-right .container {
   margin-right: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .home-banner {
+    min-height: calc( 100vh - 60px);
+  }
+  .home-banner .container {
+    height: 100%;
+    padding: 50px 0;
+    width: 90%;
+  }
+  .home-banner .container h1 {
+    font-size: 60px;
+    font-size: clamp(30px, 5vw, 70px);
+    line-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 35px;
+    font-weight: normal;
+  }
+  .home-banner .container p {
+    margin-bottom: 30px;
+    font-size: clamp(1em, 2vw, 1.2em);
+    line-height: 30px;
+    font-weight: normal;
+    color: #99D5EC;
+  }
+  .home-banner .container .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .home-banner .container .btns a {
+    margin-right: 10px;
+  }
+}
+
 .services {
   padding: 50px 0 70px 0;
 }
