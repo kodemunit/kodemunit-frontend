@@ -18,9 +18,9 @@ const Projects = () => {
                             {name}
                         </h3>
                         <picture>
-                            <source media="(min-width:650px)" srcset="" />
-                            <source media="(min-width:465px)" srcset="" />
-                            <img src="" alt="Flowers" />
+                            {/* <source media="(min-width:650px)" srcset="" />
+                            <source media="(min-width:465px)" srcset="" /> */}
+                            {/* <img src="" alt="" /> */}
                         </picture>
                         <div className="project details">
                             
