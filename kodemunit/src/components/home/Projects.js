@@ -29,8 +29,8 @@ const Projects = () => {
             ) => (
               <article key={index}>
                 <div className="top-details">
-                  <h3>{name}</h3>
-                  {category && <p>#{category[0]}</p>}
+                  {/* <h3>{name}</h3> */}
+                  {/* {category && <p>#{category[0]}</p>} */}
                 </div>
                 <picture>
                   {/* <source media="(min-width:650px)" srcset="" />
