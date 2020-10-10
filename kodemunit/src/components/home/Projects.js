@@ -13,14 +13,14 @@ const Projects = () => {
             </header>
             <div className="showcase">
                 {projects.map(({name, slug, url, imgSrc, gallery, category, theme, coreProduct, cost, sales}, index) => (
-                    <article>
+                    <article key={index}>
                         <h3>
                             {name}
                         </h3>
                         <picture>
                             <source media="(min-width:650px)" srcset="" />
                             <source media="(min-width:465px)" srcset="" />
-                            <img src="" alt="Flowers" style="width:auto;" />
+                            <img src="" alt="Flowers" />
                         </picture>
                         <div className="project details">
                             
