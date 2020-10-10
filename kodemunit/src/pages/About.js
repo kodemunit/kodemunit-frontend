@@ -2,6 +2,7 @@ import React from "react"
 
 // components
 import Banner from "../components/Banner"
+import AboutSvg from "../components/about/AboutSvg"
 
 const About = () => {
   return (
@@ -11,7 +12,9 @@ const About = () => {
         title2="Us Page."
         descr="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend ultrices sit ac, donec libero lectus pellentesque. Viverra vestibulum netus lectus lacus pretium risus et faucibus volutpat. Viverra vestibulum netus lectus lacus pretium risus et faucibus volutpat.
 Aenean eleifend ultrices sit ac, donec libero lectus pellentesque."
-      ></Banner>
+      >
+        <AboutSvg />
+      </Banner>
     </div>
   )
 }
