@@ -10,6 +10,10 @@ body {
   color: #ffffff;
   scroll-behavior: smooth;
   font-family: Roboto;
+  -webkit-transition: -webkit-transform .35s;
+  transition: -webkit-transform .35s;
+  transition: transform .35s;
+  transition: transform .35s, -webkit-transform .35s;
 }
 
 img {
@@ -173,9 +177,6 @@ header.header .container nav ul li a.link.active::before {
     height: 20px;
     width: auto;
   }
-  header.header .container nav {
-    display: none;
-  }
   header.header .container .burger {
     height: 30px;
     width: 30px;
@@ -188,6 +189,7 @@ header.header .container nav ul li a.link.active::before {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    cursor: pointer;
   }
   header.header .container .burger span {
     height: 2px;
@@ -210,6 +212,48 @@ header.header .container nav ul li a.link.active::before {
   }
   header.header .container .burger span::after {
     top: 9px;
+  }
+  header.header .container nav {
+    min-height: 100vh;
+    width: 50%;
+    position: -webkit-sticky;
+    position: sticky;
+    background: #0F111E;
+    top: 0;
+    z-index: 11;
+    background: #161825;
+    overflow: auto;
+    -webkit-transition: -webkit-transform .35s ease-in;
+    transition: -webkit-transform .35s ease-in;
+    transition: transform .35s ease-in;
+    transition: transform .35s ease-in, -webkit-transform .35s ease-in;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.header .container nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.header .container nav .burger.close {
+    position: absolute;
+    top: 20px;
+    right: 5%;
   }
 }
 
@@ -940,7 +984,7 @@ footer .copy-right .container {
   }
   .contact-page .container .contact-details {
     width: 40%;
-    max-width: 400px;
+    max-width: 500px;
     padding-left: 60px;
   }
 }
