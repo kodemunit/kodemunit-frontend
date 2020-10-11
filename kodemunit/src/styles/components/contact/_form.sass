@@ -30,16 +30,35 @@
                         border: none
                         padding: 10px
                         color: #ffffffab
+                        font-size: 16px
                         &:focus
                             border: 1px solid $primary-color
+                        &::placeholder
+                            font-size: 14px
                     textarea
                         height: 100px
                         resize: none
                         font-size: 16px
                         font-family: Roboto
+                        &::placeholder
+                            font-size: 14px
                 .btns
                     @include flexCenter
                     button
                         border: none
                         cursor: pointer
 
+@media screen and ( min-width: 992px )
+    .contact-page
+        background: linear-gradient(180deg, #161825 0%, #101119 57.81%, #101119 100%)
+        .container
+            justify-content: center
+            .contact-form
+                width: 60%
+                max-width: 600px
+            .contact-details
+                width: 40%
+                max-width: 400px
+                padding-left: 60px
+        
+            
