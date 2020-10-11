@@ -96,14 +96,15 @@ header.header
                         top: 9px
             nav
                 min-height: 100vh
-                width: 50%
-                // transform: translateX(-200%)
-                position: sticky
-                background: $nav-bg
-                // left: 0
+                width: 100%
+                margin: 10px
+                transform: rotateY(90deg)
+                transform-origin: 50% 50%
+                position: fixed
+                left: 0
                 top: 0
                 z-index: 11
-                background: $bg
+                background: #161825f8
                 overflow: auto
                 transition: transform .35s ease-in
                 display: flex
@@ -113,12 +114,25 @@ header.header
                 ul
                     flex-direction: column
                     align-items: center
+                    width: 100%
+                    li
+                        btn
                 &.open
-                    // transform: translateX(-70%)
-                    // overflow-y: scroll !important
-                    // position: fixed
+                    transform: rotateY(0deg)
                 .burger.close
                     position: absolute
                     top: 20px
-                    right: 5%
+                    right: 10%
+                    span
+                        height: 0
+                        &::before
+                            height: 2px
+                            width: 30px
+                            transform: rotate(45deg)
+                            transform-origin: 0% 0%
+                        &::after
+                            width: 30px
+                            height: 2px
+                            transform: rotate(-45deg)
+                            transform-origin: 11% 0%
 
