@@ -11,32 +11,35 @@ const ContactDetails = () => {
         recusandae tenetur, ea, ducimus at. Vero nulla libero est ad provident.
       </p>
       <div className="contact">
-      <ul>
+        <ul>
           <li>
-            <div className='left'>
-              <FaMapMarkerAlt className='icon' />
+            <div className="icon-container">
+              <FaMapMarkerAlt className="icon" />
             </div>
-            <div className='right'>
+            <div className="text">
               <span>Dar Es Salaam, Tanzania</span>
             </div>
           </li>
           <li>
-            <div className='left'>
-              <FaPaperPlane className='icon' />
+            <div className="icon-container">
+              <FaPaperPlane className="icon" />
             </div>
-            <div className='right'>
+            <div className="text">
               <span>
-                <a href='mailto:bmsteve@yahoo.com'>kodemunit@gmail.com</a>
+                <a href="mailto:kodemunit@gmail.com">kodemunit@gmail.com</a>
+              </span>
+              <span>
+                <a href="mailto:kodemunit@gmail.com">kodemunit@gmail.com</a>
               </span>
             </div>
           </li>
           <li>
-            <div className='left'>
-              <FaPhone className='icon' />
+            <div className="icon-container">
+              <FaPhone className="icon" />
             </div>
-            <div className='right'>
+            <div className="text">
               <span>
-                <a href='tel:+255655392445'>+255 655 392 445</a>
+                <a href="tel:+255655392445">+255 655 392 445</a>
               </span>
             </div>
           </li>

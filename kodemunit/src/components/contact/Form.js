@@ -36,14 +36,13 @@ const Form = () => {
             className="form-control"
             id="company"
             placeholder="Company/Organisation"
-            autoComplete
           />
         </div>
         <div className="form-group">
-          <label htmlFor="Name">Message:</label>
+          <label htmlFor="msg">Message:</label>
           <textarea
             className="form-control"
-            id="Name"
+            id="msg"
             placeholder="Your Message..."
           />
         </div>

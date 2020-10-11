@@ -9,13 +9,14 @@
             background: #161825
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -4px -3px 4px rgba(141, 173, 183, 0.25)
             width: 100%
+            margin: 30px 0
             form
-                padding: 30px 20px
+                padding: 30px 15px
                 h1
                     font-size: clamp(30px, 5vw, 60px)
                     margin-bottom: 30px
                 .form-group
-                    margin: 25px 0
+                    margin: 35px 0
                     display: flex
                     flex-direction: column
                     label
@@ -28,9 +29,8 @@
                         border-radius: 5px
                         border: none
                         padding: 10px
-                        color: #ffffff
+                        color: #ffffffab
                         &:focus
-                            // outline: 1px solid gray !important
                             border: 1px solid $primary-color
                     textarea
                         height: 100px
@@ -41,4 +41,5 @@
                     @include flexCenter
                     button
                         border: none
+                        cursor: pointer
 
