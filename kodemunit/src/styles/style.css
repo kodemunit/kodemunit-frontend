@@ -170,7 +170,7 @@ header.header .container nav ul li a.link.active::before {
 
 @media screen and (max-width: 768px) {
   header.header .container .logo img {
-    height: 20px;
+    height: 30px;
     width: auto;
   }
   header.header .container .burger {
