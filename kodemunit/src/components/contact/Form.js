@@ -36,6 +36,7 @@ const Form = () => {
             className="form-control"
             id="company"
             placeholder="Company/Organisation"
+            autoComplete
           />
         </div>
         <div className="form-group">
@@ -46,9 +47,11 @@ const Form = () => {
             placeholder="Your Message..."
           />
         </div>
-        <button type="submit" class="btn btn-primary">
-          Submit
-        </button>
+        <div className="btns">
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+        </div>
       </form>
     </section>
   )

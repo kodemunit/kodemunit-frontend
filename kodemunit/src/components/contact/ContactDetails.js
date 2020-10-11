@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaPaperPlane, FaPhone } from "react-icons/all"
 
 const ContactDetails = () => {
   return (
-    <section className>
+    <section className="contact-details">
       <h2>Get In Touch.</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, expedita

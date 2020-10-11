@@ -1,0 +1,44 @@
+.contact-page
+    background: linear-gradient(180deg, #161825 0%, #101119 57.81%, #101119 100%)
+    .container
+        padding: 30px 0
+        width: 90%
+        display: flex
+        flex-wrap: wrap
+        .contact-form
+            background: #161825
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -4px -3px 4px rgba(141, 173, 183, 0.25)
+            width: 100%
+            form
+                padding: 30px 20px
+                h1
+                    font-size: clamp(30px, 5vw, 60px)
+                    margin-bottom: 30px
+                .form-group
+                    margin: 25px 0
+                    display: flex
+                    flex-direction: column
+                    label
+                        padding-bottom: 10px
+                    input, textarea
+                        width: 100%
+                        height: 50px
+                        background: #161825
+                        box-shadow: inset -3px -4px 4px rgba(255, 255, 255, 0.25), inset 3px 4px 4px 2px rgba(0, 0, 0, 0.25)
+                        border-radius: 5px
+                        border: none
+                        padding: 10px
+                        color: #ffffff
+                        &:focus
+                            // outline: 1px solid gray !important
+                            border: 1px solid $primary-color
+                    textarea
+                        height: 100px
+                        resize: none
+                        font-size: 16px
+                        font-family: Roboto
+                .btns
+                    @include flexCenter
+                    button
+                        border: none
+
