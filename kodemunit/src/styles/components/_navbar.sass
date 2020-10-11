@@ -126,8 +126,30 @@ header.header
                         .btn.btn-primary
                             background: none
                             color: #ffffffb7
+                            box-shadow: none
+                            padding: 5px 0
+                            position: relative
+                            transition: .3s
+                            width: 100%
+                            display: inline-flex
+                            &::before
+                                content: ""
+                                position: absolute
+                                left: 0
+                                bottom: 0
+                                height: 0
+                                width: 100%
+                                background: $primary-color
+                                transition: .25s
+                            &:hover
+                                &::before
+                                    height: 4px
+                                    width: 100%
                         .btn.btn-secondary
                             color: #ffffffb7
+                            font-weight: normal
+                            &::before
+                                height: 1px
                         a
                             font-size: 24px
                 &.open
@@ -148,4 +170,3 @@ header.header
                             height: 2px
                             transform: rotate(-45deg)
                             transform-origin: 11% 0%
-
