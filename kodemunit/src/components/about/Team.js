@@ -12,8 +12,8 @@ const Team = () => {
           <img src={teamImage} alt="kodemunit team in action" />
         </div>
         <div className="team-members">
-          <div className="descr">
-            <h1>Our Mission</h1>
+          <div className="team-container descr">
+            <h1>Our Team</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               eleifend ultrices sit ac, donec libero lectus pellentesque.
@@ -21,20 +21,20 @@ const Team = () => {
               volutpat.
             </p>
           </div>
-          <div className="image-container">
+          <div className="team-container image-card">
             <img src={team1} alt="The Kodemunit team in action" />
             <span className="name">Justine Peterson</span><br></br>
-            <span className="Title">Team Lead</span>
+            <span className="title">Team Lead</span>
           </div>
-          <div className="image-container">
+          <div className="team-container image-card">
             <img src={team2} alt="The Kodemunit team in action" />
-            <span className="name">Justine Peterson</span><br></br>
-            <span className="Title">Team Lead</span>
+            <span className="name">Benedict Steven</span><br></br>
+            <span className="title">Team Lead</span>
           </div>
-          <div className="image-container">
+          <div className="team-container image-card">
             <img src={team3} alt="The Kodemunit team in action" />
-            <span className="name">Justine Peterson</span><br></br>
-            <span className="Title">Team Lead</span>
+            <span className="name">Daniel Kweka</span><br></br>
+            <span className="title">Team Lead</span>
           </div>
         </div>
       </section>
