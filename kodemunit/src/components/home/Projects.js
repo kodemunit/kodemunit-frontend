@@ -20,8 +20,8 @@ const Projects = () => {
                   {category && <p>#{category[0]}</p>}
                 </div>
                 <picture>
-                  <source media="(min-width:650px)" srcset="" />
-                  <source media="(min-width:465px)" srcset="" />
+                  <source media="(min-width:650px)" srcSet="" />
+                  <source media="(min-width:465px)" srcSet="" />
                   <img src="" alt="" />
                 </picture>
                 <div className="project details">
