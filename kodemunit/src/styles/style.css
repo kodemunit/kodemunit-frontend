@@ -1262,4 +1262,163 @@ footer .copy-right .container {
   color: #ffffff6b;
   text-decoration: underline;
 }
+
+.mission {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.mission .image-container img {
+  width: 600px;
+  height: 400px;
+}
+
+.mission .descr {
+  width: 40%;
+}
+
+.mission .descr h1 {
+  font-size: 72px;
+  font-weight: normal;
+}
+
+.mission .descr p {
+  color: 99D5EC;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.vision {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 100px auto;
+}
+
+.vision .image-container img {
+  width: 600px;
+  height: 400px;
+}
+
+.vision .descr {
+  width: 40%;
+}
+
+.vision .descr h1 {
+  font-size: 72px;
+  font-weight: normal;
+}
+
+.vision .descr p {
+  color: 99D5EC;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.team .team-image img {
+  width: 100%;
+  height: 480px;
+}
+
+.team .team-members {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team .team-members .team-container {
+  width: 280px;
+  height: 380px;
+}
+
+.team .team-members .descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15;
+}
+
+.team .team-members h1 {
+  font-weight: normal;
+  font-size: 50px;
+  font-style: normal;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+  line-height: 84px;
+}
+
+.team .team-members p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.team .team-members .image-card {
+  background: linear-gradient(86.78deg, #10111A 23.54%, #1D1F2B 77.91%);
+  -webkit-box-shadow: -3px -4px 4px rgba(197, 188, 188, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.35), inset -2px -2px 4px rgba(55, 53, 53, 0.05), inset 3px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: -3px -4px 4px rgba(197, 188, 188, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.35), inset -2px -2px 4px rgba(55, 53, 53, 0.05), inset 3px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.team .team-members .image-card img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.team .team-members .image-card .name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.team .team-members .image-card .title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #9FE4FF;
+}
 /*# sourceMappingURL=style.css.map */
