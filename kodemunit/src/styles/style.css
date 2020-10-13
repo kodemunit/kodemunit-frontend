@@ -439,7 +439,7 @@ header.header .container nav ul li a.link.active::before {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 100px 0;
+    padding: 50px 0;
     width: 90%;
   }
   .banner .container .descr {
@@ -1398,7 +1398,7 @@ footer .copy-right .container {
   text-decoration: underline;
 }
 
-.mission {
+.vision, .mission {
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1406,68 +1406,92 @@ footer .copy-right .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 70px auto;
 }
 
-.mission .image-container img {
-  width: 600px;
-  height: 400px;
+.vision .image-container, .mission .image-container {
+  width: 50%;
+}
+
+.vision .image-container img, .mission .image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.vision .descr, .mission .descr {
+  width: 50%;
+  padding-right: 30px;
+}
+
+.vision .descr h1, .mission .descr h1 {
+  font-size: clamp(36px, 3vw, 50px);
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.vision .descr p, .mission .descr p {
+  color: #ffffffd0;
+  line-height: 30px;
 }
 
 .mission .descr {
-  width: 40%;
+  padding-left: 30px;
+  padding-right: 0;
 }
 
-.mission .descr h1 {
-  font-size: 72px;
-  font-weight: normal;
-}
-
-.mission .descr p {
-  color: 99D5EC;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.vision {
-  width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 100px auto;
-}
-
-.vision .image-container img {
-  width: 600px;
-  height: 400px;
-}
-
-.vision .descr {
-  width: 40%;
-}
-
-.vision .descr h1 {
-  font-size: 72px;
-  font-weight: normal;
-}
-
-.vision .descr p {
-  color: 99D5EC;
-  font-size: 18px;
-  line-height: 30px;
+@media screen and (max-width: 690px) {
+  .vision, .mission {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 50px auto;
+  }
+  .vision .image-container, .mission .image-container {
+    width: 100%;
+  }
+  .vision .image-container img, .mission .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  .vision .descr, .mission .descr {
+    width: 100%;
+    padding-right: 0;
+    padding-top: 25px;
+    width: 90%;
+    margin: auto;
+  }
+  .vision .descr h1, .mission .descr h1 {
+    font-size: clamp(36px, 3vw, 50px);
+    font-weight: normal;
+    margin-bottom: 25px;
+  }
+  .vision .descr p, .mission .descr p {
+    color: #ffffffd0;
+    line-height: 30px;
+  }
+  .mission .descr {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .vision .descr {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .team .team-image img {
@@ -1519,7 +1543,7 @@ footer .copy-right .container {
   font-size: clamp(30px, 3vw, 50px);
   font-style: normal;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
-  line-height: 84px;
+  margin-bottom: 20px;
 }
 
 .team .team-members p {
@@ -1567,7 +1591,7 @@ footer .copy-right .container {
     height: auto;
   }
   .team .team-members {
-    margin: 40px auto;
+    margin: 30px auto;
   }
   .team .team-members .team-container {
     width: 280px;
@@ -1589,7 +1613,8 @@ footer .copy-right .container {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 15px 15px 15px 0;
+    padding: 0;
+    margin: 20px 0;
     height: 100%;
   }
   .team .team-members h1 {
@@ -1597,7 +1622,6 @@ footer .copy-right .container {
     font-size: clamp(30px, 3vw, 50px);
     font-style: normal;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
-    line-height: 84px;
   }
   .team .team-members p {
     font-style: normal;

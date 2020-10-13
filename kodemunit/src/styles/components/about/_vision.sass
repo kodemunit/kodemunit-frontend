@@ -1,24 +1,64 @@
-.vision
+.vision, .mission
     width: 90%
     display: flex
     justify-content: space-between
-    align-items: flex-start
+    align-items: center
     flex-wrap: wrap
-    margin: 100px auto
+    margin: 70px auto
     .image-container
+        width: 50%
         img
-            width: 600px
-            height: 400px
+            width: 100%
+            height: auto
     .descr
-        width: 40% 
+        width: 50%
+        padding-right: 30px
         h1
-            font-size: 72px
+            font-size: clamp(36px, 3vw, 50px)
             font-weight: normal
-            line-height 84.38px
+            margin-bottom: 25px
+            // line-height 84.38px
         p
-            color: 99D5EC
-            font-size: 18px
+            color: #ffffffd0
+            // font-size: clamp(16px, )
             line-height: 30px
+.mission
+    .descr
+        padding-left: 30px
+        padding-right: 0
 
-        
-                
+@media screen and ( max-width: 690px )
+    .vision, .mission
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        margin: 50px auto
+        .image-container
+            width: 100%
+            img
+                width: 100%
+                height: auto
+        .descr
+            width: 100%
+            padding-right: 0
+            padding-top: 25px
+            width: 90%
+            margin: auto
+            h1
+                font-size: clamp(36px, 3vw, 50px)
+                font-weight: normal
+                margin-bottom: 25px
+                // line-height 84.38px
+            p
+                color: #ffffffd0
+                // font-size: clamp(16px, )
+                line-height: 30px
+    .mission
+        .descr
+            padding-left: 0
+            padding-right: 0
+    .vision
+        .descr
+            order: 2
