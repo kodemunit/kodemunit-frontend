@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 // data
 import projects from "../../data/projects"
@@ -8,37 +9,41 @@ const Projects = () => {
     <section className="projects">
       <div className="container">
         <header>
-          {/* <h2>Featured Projects</h2> */}
+          <h2>Featured Projects</h2>
         </header>
         <div className="showcase">
           {projects.map(
-            (
-              {
-                name,
-                slug,
-                url,
-                imgSrc,
-                gallery,
-                category,
-                theme,
-                coreProduct,
-                cost,
-                sales,
-              },
-              index
-            ) => (
+            ({ name, slug, url, imgSrc, category, product }, index) => (
               <article key={index}>
                 <div className="top-details">
-                  {/* <h3>{name}</h3> */}
-                  {/* {category && <p>#{category[0]}</p>} */}
+                  <h3>{name}</h3>
+                  {category && <p>#{category[0]}</p>}
                 </div>
                 <picture>
-                  {/* <source media="(min-width:650px)" srcset="" />
-                            <source media="(min-width:465px)" srcset="" /> */}
-                  {/* <img src="" alt="" /> */}
+                  <source media="(min-width:650px)" srcset="" />
+                  <source media="(min-width:465px)" srcset="" />
+                  <img src="" alt="" />
                 </picture>
                 <div className="project details">
-                    
+                  {product ? (
+                    <div className="product">
+                      {product.cost ? (
+                        <>
+                          <a href={`${product.demo}`}>Visit Demo</a>
+                          <Link to="/">View Details</Link>
+                          <a href="#!">Purchase</a>
+                        </>
+                      ) : (
+                        <>
+                          <Link to="/">Visit Site</Link>
+                        </>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="client-project">
+                      <Link to="/">Visit Site</Link>
+                    </div>
+                  )}
                 </div>
               </article>
             )

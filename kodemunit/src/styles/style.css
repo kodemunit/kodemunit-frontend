@@ -952,6 +952,11 @@ footer .copy-right .container {
   cursor: grab;
 }
 
+.testimonials .container .showcase.dragged {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
 .testimonials .container .showcase .swiper-slide {
   padding: 10px;
   padding-top: 60px;
@@ -976,6 +981,12 @@ footer .copy-right .container {
   line-height: 26px;
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
+}
+
+.testimonials .container .showcase .swiper-slide article p .icon {
+  margin-bottom: 5px;
+  margin-right: 4px;
+  color: #99D5EC;
 }
 
 .testimonials .container .showcase .swiper-slide article h2 {
@@ -1044,6 +1055,7 @@ footer .copy-right .container {
   .testimonials .container .showcase .swiper-slide article .avatar-container {
     height: 100px;
     width: 100px;
+    top: -50px;
   }
   .testimonials .container .showcase .swiper-slide article .avatar-container .avatar {
     width: 70px;

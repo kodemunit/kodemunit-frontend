@@ -1,5 +1,5 @@
-import React from "react"
-// import {FaQuote} from "react-icons/all"
+import React, {useState} from "react"
+import {FaQuoteLeft} from "react-icons/all"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/swiper.scss"
 
@@ -44,11 +44,15 @@ let testimonies = [
 ]
 
 const Testimonies = () => {
+  const [drag, setDrag] = useState(false)
+  const handleDrag = () => {
+    setDrag(true)
+  }
   return (
     <section className="testimonials">
       <h2>What our clients say about us</h2>
       <div className="container">
-        <div className="showcase">
+        <div className={drag? "dragged showcase": "showcase"} onDragCapture={handleDrag}>
           <Swiper
             spaceBetween={0}
             breakpoints={{
@@ -66,7 +70,7 @@ const Testimonies = () => {
               <SwiperSlide key={index}>
                 <article className="card">
                   <p>
-                    {/* <FaQuote className="icon" /> */}"{testimony}
+                    <FaQuoteLeft className="icon" />{testimony}
                   </p>
                   <h2>{name}</h2>
                   <h3>{title}</h3>
