@@ -34,7 +34,7 @@ const Clients = () => {
   return (
     <section className="clients">
       <div className="container">
-        <h1>Trusted By</h1>
+        <h2>Trusted By</h2>
         <div className="showcase">
           {clients.map(({ name, src }, index) => (
             <article key={index}>
