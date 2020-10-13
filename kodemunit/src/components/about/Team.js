@@ -1,8 +1,31 @@
-import React from "react";
-import teamImage from "../../assets/images/team.jpg";
-import team1 from "../../assets/images/team1.png";
-import team2 from "../../assets/images/team2.png";
-import team3 from "../../assets/images/team3.png";
+import React from "react"
+import teamImage from "../../assets/images/team.jpg"
+import team1 from "../../assets/images/team1.png"
+import team2 from "../../assets/images/team2.png"
+import team3 from "../../assets/images/team3.png"
+
+let team = [
+  {
+    name: "Justine Peterson",
+    src: team1,
+    title: "Team Lead",
+  },
+  {
+    name: "Benedict Steven",
+    src: team2,
+    title: "Team Lead",
+  },
+  {
+    name: "Daniel Kweka",
+    src: team3,
+    title: "Team Lead",
+  },
+  {
+    name: "Kelvin",
+    src: team3,
+    title: "Team Lead",
+  },
+]
 
 const Team = () => {
   return (
@@ -21,25 +44,18 @@ const Team = () => {
               volutpat.
             </p>
           </div>
-          <div className="team-container image-card">
-            <img src={team1} alt="The Kodemunit team in action" />
-            <span className="name">Justine Peterson</span><br></br>
-            <span className="title">Team Lead</span>
-          </div>
-          <div className="team-container image-card">
-            <img src={team2} alt="The Kodemunit team in action" />
-            <span className="name">Benedict Steven</span><br></br>
-            <span className="title">Team Lead</span>
-          </div>
-          <div className="team-container image-card">
-            <img src={team3} alt="The Kodemunit team in action" />
-            <span className="name">Daniel Kweka</span><br></br>
-            <span className="title">Team Lead</span>
-          </div>
+          {team.map(({ name, title, src }, index) => (
+            <div className="team-container image-card" key={index}>
+              <img src={src} alt="The Kodemunit team in action" />
+              <span className="name">{name}</span>
+              <br></br>
+              <span className="title">{title}</span>
+            </div>
+          ))}
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default Team;
+export default Team
