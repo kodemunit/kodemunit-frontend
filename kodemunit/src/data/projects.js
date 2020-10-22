@@ -1,4 +1,7 @@
-
+// sample images
+import covitTracker from "../assets/images/projects/covid19-tz.png"
+import gravitus from "../assets/images/projects/gravitus.png"
+import portfolioTheme from "../assets/images/projects/portfolio-template.png"
 
 const projects = [
     {
@@ -7,7 +10,7 @@ const projects = [
         url: "http://sozthegovt.netlify.app",
         category: ["Web", ""],
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend ultrices sit ac, donec libero lectus pellentesque. Viverra vestibulum netus lectus lacus pretium risus et faucibus volutpat.",
-        imgSrc: "",
+        imgSrc: gravitus,
         gallery: [],
         slug: "",
     },
@@ -17,7 +20,7 @@ const projects = [
         url: "http://ceeptz.netlify.app",
         category: ["Web", ""],
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend ultrices sit ac, donec libero lectus pellentesque. Viverra vestibulum netus lectus lacus pretium risus et faucibus volutpat.",
-        imgSrc: "",
+        imgSrc: portfolioTheme,
         gallery: [],
         slug: "ceeptz",
     },
@@ -26,7 +29,7 @@ const projects = [
         name: "Covid19 Tracker",
         category: ["Web", "App"],
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend ultrices sit ac, donec libero lectus pellentesque. Viverra vestibulum netus lectus lacus pretium risus et faucibus volutpat.",
-        imgSrc: "",
+        imgSrc: covitTracker,
         gallery: [],
         slug: "covid19-tracker",
         product: {
@@ -38,7 +41,7 @@ const projects = [
         name: "Food Uber",
         category: ["Web", ""],
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend ultrices sit ac, donec libero lectus pellentesque. Viverra vestibulum netus lectus lacus pretium risus et faucibus volutpat.",
-        imgSrc: "",
+        imgSrc: portfolioTheme,
         gallery: [],
         slug: "food-uber",
         product: {

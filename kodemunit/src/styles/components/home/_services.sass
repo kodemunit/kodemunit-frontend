@@ -18,7 +18,7 @@
                 color: #D3D6D7
                 margin-bottom: 40px
             a
-                color: #ffffff6c
+                color: #ffffffb2
                 text-decoration: underline
         .services-list
             h2
@@ -36,7 +36,12 @@
                     padding: 15px 20px
                     width: 100%
                     min-width: 330px
-                    color: #ffffffc4
+                    color: #ffffffdc
+                    display: flex
+                    justify-content: flex-end
+                    align-items: center
+                    .icon
+                        margin-left: 20px
 
 @media screen and ( max-width: 768px )
     .services
@@ -51,10 +56,11 @@
                     line-height: 30px
                     margin-bottom: 20px
                 a
-                    color: #ffffff6c
+                    // color: #ffffff6c
                     text-decoration: underline
             .services-list
-                width: 100%
+                width: 90%
+                margin: auto
                 h2
                     margin-bottom: 30px
                     text-align: left
@@ -63,3 +69,12 @@
                     li
                         width: 100%
                         min-width: 100%
+                        justify-content: flex-start
+                        position: relative
+                        padding-left: 50px
+                        .icon
+                            margin-left: 20px
+                            margin-right: 20px
+                            position: absolute
+                            left: 0
+                            transform: rotate(180deg)

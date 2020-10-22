@@ -12,6 +12,16 @@ body {
   font-family: Roboto;
 }
 
+::-moz-selection {
+  background: #ffffff;
+  color: #161825;
+}
+
+::selection {
+  background: #ffffff;
+  color: #161825;
+}
+
 img {
   max-width: 100%;
 }
@@ -330,18 +340,18 @@ header.header .container nav ul li a.link.active::before {
   header.header .container nav .burger.close span::before {
     height: 2px;
     width: 30px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    -webkit-transform-origin: 0% 150%;
+            transform-origin: 0% 150%;
   }
   header.header .container nav .burger.close span::after {
     width: 30px;
     height: 2px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    -webkit-transform-origin: 11% 0%;
-            transform-origin: 11% 0%;
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+    -webkit-transform-origin: 25% 50%;
+            transform-origin: 25% 50%;
   }
 }
 
@@ -645,7 +655,7 @@ footer .copy-right {
 }
 
 footer .copy-right .container {
-  opacity: .4;
+  opacity: .6;
   font-size: .8em;
 }
 
@@ -812,7 +822,7 @@ footer .copy-right .container {
 }
 
 .services .container .description a {
-  color: #ffffff6c;
+  color: #ffffffb2;
   text-decoration: underline;
 }
 
@@ -832,7 +842,20 @@ footer .copy-right .container {
   padding: 15px 20px;
   width: 100%;
   min-width: 330px;
-  color: #ffffffc4;
+  color: #ffffffdc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .container .services-list ul li .icon {
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -850,11 +873,11 @@ footer .copy-right .container {
     margin-bottom: 20px;
   }
   .services .container .description a {
-    color: #ffffff6c;
     text-decoration: underline;
   }
   .services .container .services-list {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
   .services .container .services-list h2 {
     margin-bottom: 30px;
@@ -866,6 +889,19 @@ footer .copy-right .container {
   .services .container .services-list ul li {
     width: 100%;
     min-width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+    padding-left: 50px;
+  }
+  .services .container .services-list ul li .icon {
+    margin-left: 20px;
+    margin-right: 20px;
+    position: absolute;
+    left: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 }
 

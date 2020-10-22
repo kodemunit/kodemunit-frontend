@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import {FaAngleDoubleLeft} from "react-icons/all"
 
 // data
 import services from "../../data/services"
@@ -26,7 +27,7 @@ const Services = () => {
           <h2>What we do!</h2>
           <ul>
             {services.map(({ title, id }) => (
-              <li className="list-item" key={id}>{title} {`<<`}</li>
+              <li className="list-item" key={id}>{title} <FaAngleDoubleLeft className="icon" /></li>
             ))}
           </ul>
         </div>

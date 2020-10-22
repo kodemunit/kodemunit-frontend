@@ -28,7 +28,7 @@ const Projects = () => {
             // }}
           >
           {projects.map(
-            ({ name, slug, url, imgSrc, category, product }, index) => (
+            ({ name, url, imgSrc, category, product }, index) => (
               <SwiperSlide key={index}>
               <article key={index}>
                 <div className="top-details">
@@ -51,13 +51,13 @@ const Projects = () => {
                         </>
                       ) : (
                         <>
-                          <Link to="/">Visit Site</Link>
+                          <a href={product.url}>Visit Site</a>
                         </>
                       )}
                     </div>
                   ) : (
                     <div className="client-project">
-                      <Link to="/">Visit Site</Link>
+                      <a href={url}>Visit Site</a>
                     </div>
                   )}
                 </div>
