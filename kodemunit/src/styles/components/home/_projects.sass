@@ -1,0 +1,75 @@
+.projects
+    margin: 0 0 50px 0
+    .container
+        header
+            text-align: center
+            h2
+                margin-bottom: 30px
+        .showcase
+            cursor: grab
+            &.dragged
+                cursor: grabbing
+            .swiper-slide
+                padding: 5px
+                @include flexCenter()
+                article
+                    background: linear-gradient(86.78deg, #10111A 23.54%, #1D1F2B 77.91%)
+                    box-shadow: -3px -4px 4px rgba(197, 188, 188, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.35), inset -2px -2px 4px rgba(55, 53, 53, 0.05), inset 3px 4px 4px rgba(0, 0, 0, 0.25)
+                    border-radius: 5px
+                    padding: 0 30px
+                    width: 80%
+                    max-width: 1000px
+                    .top-details
+                        padding: 15px 0
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        h3
+                            font-weight: lighter
+                            font-size: clamp(20px, 2vw, 18px)
+                        p
+                            color: #5cc1e9
+                            cursor: pointer
+                            font-size: 15px
+                            &:hover
+                                text-decoration: underline
+                    .project-details
+                        padding: 15px 0
+                        .project
+                            display: flex
+                            a
+                                color: #ffffffcc
+                                text-decoration: underline
+                        .product
+                            justify-content: space-between
+                        .client-project, .core-product
+                            justify-content: center
+
+@media screen and ( max-width: 768px )
+    .projects
+        margin: 0 0 40px 0
+        .container
+            width: 90%
+            overflow-x: hidden
+            header
+                text-align: center
+                h2
+                    margin-bottom: 25px
+            .showcase
+                cursor: grab
+                &.dragged
+                    cursor: grabbing
+                .swiper-slide
+                    padding: 5px
+                    @include flexCenter()
+                    article
+                        background: linear-gradient(86.78deg, #10111A 23.54%, #1D1F2B 77.91%)
+                        box-shadow: -3px -4px 4px rgba(197, 188, 188, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.35), inset -2px -2px 4px rgba(55, 53, 53, 0.05), inset 3px 4px 4px rgba(0, 0, 0, 0.25)
+                        border-radius: 5px
+                        padding: 0 10px
+                        width: 100%
+                        .top-details
+                            padding: 15px 0
+                            display: flex
+                            justify-content: space-between
+                            align-items: center

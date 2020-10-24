@@ -40,23 +40,23 @@ const Projects = () => {
                   <source media="(min-width:465px)" srcSet="" /> */}
                   <img src={imgSrc} alt={name} />
                 </picture>
-                <div className="project details">
+                <div className="project-details">
                   {product ? (
-                    <div className="product">
+                    <>
                       {product.cost ? (
-                        <>
+                        <div className="project product">
                           <a href={`${product.demo}`}>Visit Demo</a>
                           <Link to="/">View Details</Link>
                           <a href="#!">Purchase</a>
-                        </>
+                        </div>
                       ) : (
-                        <>
+                        <div className="core-product project">
                           <a href={product.url}>Visit Site</a>
-                        </>
+                        </div>
                       )}
-                    </div>
+                    </>
                   ) : (
-                    <div className="client-project">
+                    <div className="client-project project">
                       <a href={url}>Visit Site</a>
                     </div>
                   )}
