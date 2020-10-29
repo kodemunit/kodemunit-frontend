@@ -92,3 +92,104 @@
                         .img-container
                             margin-right: 10%
                             margin-left: -10%
+
+@media screen and ( max-width: 768px )
+    .clients-projects
+        .container
+            width: 90%
+            article
+                margin: 50px 0
+                .before, .after
+                    position: absolute
+                    // top: 0
+                    left: 0
+                    width: 95%
+                    z-index: -1
+                    &::before, &::after
+                        content: ""
+                        position: absolute
+                        height: 20px
+                        width: 50%
+                        // background: red
+                    &::before
+                        left: 0
+                    &::after
+                        left: 50%
+                .before
+                    &::before, &::after
+                        top: 0
+                    &::before
+                        box-shadow: 0px -4px 7px 10px rgba(0, 0, 0, 0.1)
+                        transform: matrix(-1, -0.02, 0.04, -1, 0, 0)
+                    &::after
+                        box-shadow: 0px -4px 7px 10px rgba(0, 0, 0, 0.1)
+                        transform: matrix(-1, 0.02, -0.04, -1, 0, 0)
+                .after
+                    &::before, &::after
+                        bottom: 0
+                    &::before
+                        box-shadow: 0px 4px 7px 10px rgba(0, 0, 0, 0.1)
+                        transform: matrix(1, -0.02, 0.05, 1, 0, 0)
+                    &::after
+                        box-shadow: 0px 4px 7px 10px rgba(0, 0, 0, 0.1)
+                        transform: matrix(1, 0.02, -0.04, 1, 0, 0)
+                .project
+                    background: #1F2337
+                    display: flex
+                    flex-direction: column
+                    margin-right: 5%
+                    z-index: 2
+                    .descr
+                        width: 100%
+                        padding: 30px
+                        order: 2
+                        h2
+                            font-size: clamp(24px, 2vw, 36px)
+                            margin-bottom: 30px
+                        p
+                            margin-bottom: 20px
+                            line-height: 30px
+                            color: #D3D6D7
+                        .tags
+                            margin-bottom: 15px
+                            span
+                                margin-right: 10px
+                                color: #1297E8
+                        a
+                            color: #ffffffcc
+                            text-decoration: underline
+                            &:hover
+                                text-decoration: none
+                    .project-image
+                        order: 1
+                        width: 100%
+                        background: #D5D9DB
+                        padding: 40px 0
+                        display: flex
+                        align-items: center
+                        position: relative
+                        .img-container
+                            position: relative
+                            top: 10px
+                            left: 5%
+                            border-radius: 20px
+                            margin-left: 0
+                            margin-right: 0
+                            img
+                                width: 100%
+                                border-radius: 20px
+                &:nth-child(even)
+                    .before, .after
+                        left: 5%
+                        width: 95%
+                    .project
+                        margin-right: 0
+                        margin-left: 5%
+                        .descr
+                            order: 2
+                        .project-image
+                            order: 1
+                            .img-container
+                                left: -5%
+                                margin-right: 0
+                                margin-left: 0

@@ -5,7 +5,7 @@ const Works = ({ projects }) => {
     <div className="clients-projects">
       <div className="container">
         {projects.map(({ name, about, url, category, imgSrc }, index) => (
-          <article>
+          <article key={index}>
             <div className="before"></div>
             <div className="project">
               <div className="descr">

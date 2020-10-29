@@ -31,3 +31,27 @@
                     color: #eeeeee
                     .active
                         background: $primary-color
+
+@media screen and ( max-width: 992px )
+    .categories
+        .container
+            .showcase
+                .swiper-slide
+                    max-width: 100px
+                    span
+                        font-size: 14px
+
+@media screen and ( max-width: 768px )
+    .categories
+        .container
+            width: 90%
+            flex-direction: column
+            p
+                margin-bottom: 30px
+                padding-right: 0
+            .showcase
+                height: 40px
+                border-radius: 20px
+                .swiper-slide
+                    height: 40px
+                    // max-width: 100px
