@@ -1518,9 +1518,8 @@ footer .copy-right .container {
 }
 
 .pagination .container .showcase .swiper-slide {
-  width: 30px;
+  width: 50px;
   height: 50px;
-  margin: 0 10px;
 }
 
 .pagination .container .showcase .swiper-slide span {
@@ -1535,10 +1534,10 @@ footer .copy-right .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
-.pagination .container .showcase .swiper-slide span .active {
+.pagination .container .showcase .swiper-slide span.active {
   background: #04749F;
 }
 
