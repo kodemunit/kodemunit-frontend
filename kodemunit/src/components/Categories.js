@@ -48,7 +48,7 @@ const Categories = () => {
             grabCursor={true}
           >
             {categories.map((category, index) => (
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 <span>{category}</span>
               </SwiperSlide>
             ))}
