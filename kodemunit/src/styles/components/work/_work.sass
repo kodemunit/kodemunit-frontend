@@ -1,10 +1,59 @@
 .clients-projects
     width: 100%
     .container
-        width: 95%
-        margin: 30px auto
+        width: 90%
         article
-            margin: 30px 0
+            margin: 50px 0
+            position: relative
+            .before, .after
+                position: absolute
+                // background: red
+                height: 10px
+                width: 100%
             .project
+                background: #1F2337
                 display: flex
+                margin-right: 5%
+                .descr
+                    width: 50%
+                    padding: 30px
+                    h2
+                        font-size: clamp(24px, 2vw, 36px)
+                        margin-bottom: 30px
+                    p
+                        margin-bottom: 20px
+                        line-height: 30px
+                        color: #D3D6D7
+                    .tags
+                        margin-bottom: 15px
+                        span
+                            margin-right: 10px
+                            color: #1297E8
+                    a
+                        color: #ffffffcc
+                        text-decoration: underline
 
+                .project-image
+                    width: 50%
+                    background: #D5D9DB
+                    padding: 40px 0
+                    display: flex
+                    align-items: center
+                    .img-container
+                        border-radius: 20px
+                        margin-left: 10%
+                        margin-right: -10%
+                        img
+                            width: 100%
+                            border-radius: 20px
+            &:nth-child(even)
+                .project
+                    margin-right: 0
+                    margin-left: 5%
+                    .descr
+                        order: 2
+                    .project-image
+                        order: 1
+                        .img-container
+                            margin-right: 10%
+                            margin-left: -10%

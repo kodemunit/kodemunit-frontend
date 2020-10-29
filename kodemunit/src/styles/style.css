@@ -1320,18 +1320,101 @@ footer .copy-right .container {
 }
 
 .clients-projects .container {
-  width: 95%;
-  margin: 30px auto;
+  width: 90%;
 }
 
 .clients-projects .container article {
-  margin: 30px 0;
+  margin: 50px 0;
+  position: relative;
+}
+
+.clients-projects .container article .before, .clients-projects .container article .after {
+  position: absolute;
+  height: 10px;
+  width: 100%;
 }
 
 .clients-projects .container article .project {
+  background: #1F2337;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 5%;
+}
+
+.clients-projects .container article .project .descr {
+  width: 50%;
+  padding: 30px;
+}
+
+.clients-projects .container article .project .descr h2 {
+  font-size: clamp(24px, 2vw, 36px);
+  margin-bottom: 30px;
+}
+
+.clients-projects .container article .project .descr p {
+  margin-bottom: 20px;
+  line-height: 30px;
+  color: #D3D6D7;
+}
+
+.clients-projects .container article .project .descr .tags {
+  margin-bottom: 15px;
+}
+
+.clients-projects .container article .project .descr .tags span {
+  margin-right: 10px;
+  color: #1297E8;
+}
+
+.clients-projects .container article .project .descr a {
+  color: #ffffffcc;
+  text-decoration: underline;
+}
+
+.clients-projects .container article .project .project-image {
+  width: 50%;
+  background: #D5D9DB;
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients-projects .container article .project .project-image .img-container {
+  border-radius: 20px;
+  margin-left: 10%;
+  margin-right: -10%;
+}
+
+.clients-projects .container article .project .project-image .img-container img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.clients-projects .container article:nth-child(even) .project {
+  margin-right: 0;
+  margin-left: 5%;
+}
+
+.clients-projects .container article:nth-child(even) .project .descr {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.clients-projects .container article:nth-child(even) .project .project-image {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.clients-projects .container article:nth-child(even) .project .project-image .img-container {
+  margin-right: 10%;
+  margin-left: -10%;
 }
 
 .service-banner {

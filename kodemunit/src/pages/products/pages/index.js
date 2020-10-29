@@ -19,7 +19,7 @@ const ProductsPage = () => {
           <img src={featuredImg} alt=""/>
         </div>
       </Banner>
-      <Link to="/products/kodemunit">Kodemunit</Link>
+      {/* <Link to="/products/kodemunit">Kodemunit</Link> */}
     </div>
   )
 }

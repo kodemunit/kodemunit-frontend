@@ -11,7 +11,7 @@ const Works = ({ projects }) => {
               <div className="descr">
                 <h2>{name}</h2>
                 <p>{about}</p>
-                <div className="categories">
+                <div className="tags">
                   {category.map((item, index) => (
                     <span key={index}>#{item}</span>
                   ))}
@@ -19,7 +19,9 @@ const Works = ({ projects }) => {
                 <a href={url}>Visit Site</a>
               </div>
               <div className="project-image">
-                <img src={imgSrc} alt={name} />
+                <div className="img-container">
+                  <img src={imgSrc} alt={name} />
+                </div>
               </div>
             </div>
             <div className="after"></div>
