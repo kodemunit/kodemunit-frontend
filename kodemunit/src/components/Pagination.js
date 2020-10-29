@@ -10,9 +10,9 @@ const Pagination = () => {
         <div className="showcase">
         <Swiper
             slidesPerView="auto"
-            centeredSlides={true}
-            a11y={true}
-            keyboardControl={true}
+            // centeredSlides={true}
+            // a11y={true}
+            // keyboardControl={true}
             grabCursor={true}
           >
             {numbers.map((number, index) => (

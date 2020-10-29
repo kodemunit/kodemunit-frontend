@@ -42,9 +42,9 @@ const Categories = () => {
         <div className="showcase">
           <Swiper
             slidesPerView="auto"
-            centeredSlides={true}
-            a11y={true}
-            keyboardControl={true}
+            // centeredSlides={true}
+            // a11y={true}
+            // keyboardControl={true}
             grabCursor={true}
           >
             {categories.map((category, index) => (

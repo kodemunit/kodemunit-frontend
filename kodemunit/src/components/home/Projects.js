@@ -16,16 +16,9 @@ const Projects = () => {
         <div className="showcase">
         <Swiper
             spaceBetween={20}
-            // breakpoints={{
-            //   768: {
-            //     width: 768,
-            //     slidesPerView: 1,
-            //   },
-            //   1200: {
-            //     width: 1200,
-            //     slidesPerView: 3,
-            //   },
-            // }}
+            centeredSlides={true}
+            // keyboardControl={true}
+            grabCursor={true}
           >
           {projects.map(
             ({ name, url, imgSrc, category, product }, index) => (

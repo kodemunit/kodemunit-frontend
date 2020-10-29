@@ -55,6 +55,10 @@ const Testimonies = () => {
         <div className={drag? "dragged showcase": "showcase"} onDragCapture={handleDrag}>
           <Swiper
             spaceBetween={0}
+            // centeredSlides={true}
+            // a11y={true}
+            // keyboardControl={true}
+            grabCursor={true}
             breakpoints={{
               768: {
                 width: 768,

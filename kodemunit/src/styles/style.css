@@ -919,16 +919,6 @@ footer .copy-right .container {
   margin-bottom: 30px;
 }
 
-.projects .container .showcase {
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-
-.projects .container .showcase.dragged {
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
-}
-
 .projects .container .showcase .swiper-slide {
   padding: 5px;
   display: -webkit-box;
@@ -1019,14 +1009,6 @@ footer .copy-right .container {
   }
   .projects .container header h2 {
     margin-bottom: 25px;
-  }
-  .projects .container .showcase {
-    cursor: -webkit-grab;
-    cursor: grab;
-  }
-  .projects .container .showcase.dragged {
-    cursor: -webkit-grabbing;
-    cursor: grabbing;
   }
   .projects .container .showcase .swiper-slide {
     padding: 5px;
