@@ -3,10 +3,11 @@ import React from "react"
 // components
 import Banner from "../components/Banner"
 import WorkSvg from "../components/work/WorkSvg"
+import WorkShowcase from "../components/work/WorkShowcase"
 
 const Work = () => {
   return (
-    <div>
+    <div className="page work-showcase-page">
       <Banner
         title1="Work"
         title2="Showcase."
@@ -14,6 +15,9 @@ const Work = () => {
       >
         <WorkSvg />
       </Banner>
+      <main>
+        <WorkShowcase />
+      </main>
     </div>
   )
 }

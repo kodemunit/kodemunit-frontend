@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import {FaQuoteLeft} from "react-icons/all"
 import { Swiper, SwiperSlide } from "swiper/react"
-import "swiper/swiper.scss"
+
 
 // avatars
 import ceeptz from "../../assets/images/avatars/ceeptz.png"
