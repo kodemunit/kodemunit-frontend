@@ -7,13 +7,43 @@
             position: relative
             .before, .after
                 position: absolute
-                // background: red
-                height: 10px
-                width: 100%
+                // top: 0
+                left: 0
+                width: 95%
+                z-index: -1
+                &::before, &::after
+                    content: ""
+                    position: absolute
+                    height: 20px
+                    width: 50%
+                    // background: red
+                &::before
+                    left: 0
+                &::after
+                    left: 50%
+            .before
+                &::before, &::after
+                    top: 0
+                &::before
+                    box-shadow: 0px -4px 7px 10px rgba(0, 0, 0, 0.1)
+                    transform: matrix(-1, -0.02, 0.04, -1, 0, 0)
+                &::after
+                    box-shadow: 0px -4px 7px 10px rgba(0, 0, 0, 0.1)
+                    transform: matrix(-1, 0.02, -0.04, -1, 0, 0)
+            .after
+                &::before, &::after
+                    bottom: 0
+                &::before
+                    box-shadow: 0px 4px 7px 10px rgba(0, 0, 0, 0.1)
+                    transform: matrix(1, -0.02, 0.05, 1, 0, 0)
+                &::after
+                    box-shadow: 0px 4px 7px 10px rgba(0, 0, 0, 0.1)
+                    transform: matrix(1, 0.02, -0.04, 1, 0, 0)
             .project
                 background: #1F2337
                 display: flex
                 margin-right: 5%
+                z-index: 2
                 .descr
                     width: 50%
                     padding: 30px
@@ -32,6 +62,8 @@
                     a
                         color: #ffffffcc
                         text-decoration: underline
+                        &:hover
+                            text-decoration: none
 
                 .project-image
                     width: 50%
@@ -47,6 +79,9 @@
                             width: 100%
                             border-radius: 20px
             &:nth-child(even)
+                .before, .after
+                    left: 5%
+                    width: 95%
                 .project
                     margin-right: 0
                     margin-left: 5%

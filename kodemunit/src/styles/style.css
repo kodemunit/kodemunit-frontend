@@ -1330,8 +1330,60 @@ footer .copy-right .container {
 
 .clients-projects .container article .before, .clients-projects .container article .after {
   position: absolute;
-  height: 10px;
-  width: 100%;
+  left: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+.clients-projects .container article .before::before, .clients-projects .container article .before::after, .clients-projects .container article .after::before, .clients-projects .container article .after::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 50%;
+}
+
+.clients-projects .container article .before::before, .clients-projects .container article .after::before {
+  left: 0;
+}
+
+.clients-projects .container article .before::after, .clients-projects .container article .after::after {
+  left: 50%;
+}
+
+.clients-projects .container article .before::before, .clients-projects .container article .before::after {
+  top: 0;
+}
+
+.clients-projects .container article .before::before {
+  -webkit-box-shadow: 0px -4px 7px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px -4px 7px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transform: matrix(-1, -0.02, 0.04, -1, 0, 0);
+          transform: matrix(-1, -0.02, 0.04, -1, 0, 0);
+}
+
+.clients-projects .container article .before::after {
+  -webkit-box-shadow: 0px -4px 7px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px -4px 7px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transform: matrix(-1, 0.02, -0.04, -1, 0, 0);
+          transform: matrix(-1, 0.02, -0.04, -1, 0, 0);
+}
+
+.clients-projects .container article .after::before, .clients-projects .container article .after::after {
+  bottom: 0;
+}
+
+.clients-projects .container article .after::before {
+  -webkit-box-shadow: 0px 4px 7px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 7px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transform: matrix(1, -0.02, 0.05, 1, 0, 0);
+          transform: matrix(1, -0.02, 0.05, 1, 0, 0);
+}
+
+.clients-projects .container article .after::after {
+  -webkit-box-shadow: 0px 4px 7px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 7px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transform: matrix(1, 0.02, -0.04, 1, 0, 0);
+          transform: matrix(1, 0.02, -0.04, 1, 0, 0);
 }
 
 .clients-projects .container article .project {
@@ -1340,6 +1392,7 @@ footer .copy-right .container {
   display: -ms-flexbox;
   display: flex;
   margin-right: 5%;
+  z-index: 2;
 }
 
 .clients-projects .container article .project .descr {
@@ -1372,6 +1425,10 @@ footer .copy-right .container {
   text-decoration: underline;
 }
 
+.clients-projects .container article .project .descr a:hover {
+  text-decoration: none;
+}
+
 .clients-projects .container article .project .project-image {
   width: 50%;
   background: #D5D9DB;
@@ -1393,6 +1450,11 @@ footer .copy-right .container {
 .clients-projects .container article .project .project-image .img-container img {
   width: 100%;
   border-radius: 20px;
+}
+
+.clients-projects .container article:nth-child(even) .before, .clients-projects .container article:nth-child(even) .after {
+  left: 5%;
+  width: 95%;
 }
 
 .clients-projects .container article:nth-child(even) .project {
