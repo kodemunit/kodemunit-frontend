@@ -13,6 +13,7 @@ import Error from "./pages/Error"
 // components
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
+import SearchResults from "./components/SearchResults"
 
 // styles
 import "./styles/style.css"
@@ -31,6 +32,7 @@ function App() {
         <Route component={Error} />
       </Switch>
       <Footer />
+      <SearchResults />
     </div>
   )
 }

@@ -3,9 +3,14 @@ import React from "react"
 
 // components
 import Banner from "../../../components/Banner"
+import Search from "../../../components/products/Search"
+import ProductsSlider from "../../../components/products/ProductsSlider"
 
 // images
 import featuredImg from "../../../assets/images/food-uber.png"
+
+// styles
+import "../../../styles/pages/products.sass"
 
 const ProductsPage = () => {
   return (
@@ -19,7 +24,8 @@ const ProductsPage = () => {
           <img src={featuredImg} alt=""/>
         </div>
       </Banner>
-      {/* <Link to="/products/kodemunit">Kodemunit</Link> */}
+      <Search />
+      <ProductsSlider />
     </div>
   )
 }
