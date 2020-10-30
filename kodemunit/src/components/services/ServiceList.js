@@ -1,10 +1,12 @@
-import React, { useState } from "react"
+import React from "react"
+
+// components
+import Accordion from "./Accordion"
 
 // data
 import services from "../../data/services"
 
 const ServiceList = () => {
-  const [accord, setAccord] = useState(1)
   return (
     <section className="service-list">
       <div className="container">
@@ -12,10 +14,11 @@ const ServiceList = () => {
         <div className="showcase">
           <ul>
             {services.map(({ id, title, descrption }) => (
-              <li key={id}>
-                <h3 onClick={() => setAccord(id)}>{title} <span>{accord === id? "-": "+"}</span></h3>
-                <p className={accord === id ? "active" : ""}>{descrption}</p>
-              </li>
+              <Accordion title={title} descr={descrption} key={id}/>
+              // <li key={id}>
+              //   <h3 onClick={() => setAccord(id)}>{title} <span>{accord === id? "-": "+"}</span></h3>
+              //   <p className={accord === id ? "active" : ""}>{descrption}</p>
+              // </li>
             ))}
           </ul>
         </div>

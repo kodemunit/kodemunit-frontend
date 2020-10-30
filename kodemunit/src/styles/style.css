@@ -1714,12 +1714,25 @@ footer .copy-right .container {
 .service-list .container h2 {
   position: relative;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: clamp(24px, 5vw, 36px);
+  padding: 5px 0;
+}
+
+.service-list .container h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: #04749F;
 }
 
 .service-list .container h3 {
-  font-size: clamp(16px, 4vw, 20px);
+  font-size: clamp(16px, 4vw, 18px);
 }
 
 .service-list .container .showcase ul {
@@ -1727,7 +1740,8 @@ footer .copy-right .container {
 }
 
 .service-list .container .showcase ul li {
-  margin: 20px 0;
+  margin: 40px 0;
+  cursor: pointer;
 }
 
 .service-list .container .showcase ul li h3 {
@@ -1737,24 +1751,28 @@ footer .copy-right .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-weight: normal;
+  font-weight: lighter;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.service-list .container .showcase ul li p {
-  font-size: clamp(14px, 2vw, 18px);
-  line-height: 24px;
-  height: 0;
-  overflow: hidden;
-  color: #ffffff94;
+.service-list .container .showcase ul li .accordion__content {
+  overflow: auto;
+  -webkit-transition: max-height 0.6s ease;
+  transition: max-height 0.6s ease;
 }
 
-.service-list .container .showcase ul li p.active {
-  height: 100%;
-  overflow: hidden;
+.service-list .container .showcase ul li .accordion__content::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.service-list .container .showcase ul li .accordion__content p {
   padding: 20px 0;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 24px;
+  color: #ffffffaf;
 }
 
 .contact-page {
