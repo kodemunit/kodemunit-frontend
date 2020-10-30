@@ -13,6 +13,7 @@ const projects = [
         imgSrc: gravitus,
         gallery: [],
         slug: "",
+        type: "website"
     },
     {
         id: 2,
@@ -23,6 +24,7 @@ const projects = [
         imgSrc: portfolioTheme,
         gallery: [],
         slug: "ceeptz",
+        type: "website"
     },
     {
         id: 3,
@@ -34,7 +36,8 @@ const projects = [
         slug: "covid19-tracker",
         product: {
             url: "http://covid19-tz.netlify.app",
-        }
+        },
+        type: "website"
     },
     {
         id: 4,
@@ -50,7 +53,8 @@ const projects = [
                 usd: 5000,
                 tshs: 4500000
             }
-        }
+        },
+        type: "app"
     },
 ]
 

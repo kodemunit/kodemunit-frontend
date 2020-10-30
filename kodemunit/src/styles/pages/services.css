@@ -118,7 +118,6 @@
 
 .service-list .container .showcase ul li {
   margin: 40px 0;
-  cursor: pointer;
 }
 
 .service-list .container .showcase ul li h3 {
@@ -132,6 +131,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .service-list .container .showcase ul li .accordion__content {

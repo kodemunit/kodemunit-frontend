@@ -1,5 +1,5 @@
 .search .container {
-  padding: 50px 0;
+  padding: 50px 0 70px 0;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +118,7 @@
 
 @media screen and (max-width: 768px) {
   .search .container {
+    padding: 50px 0;
     width: 90%;
   }
   .search .container h2 {
@@ -134,6 +135,129 @@
   }
   .search .container form button {
     width: 100px;
+  }
+}
+
+.products-showcase {
+  background: #14151F;
+}
+
+.products-showcase .showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.products-showcase .showcase .card {
+  width: 100vw;
+  height: 100%;
+  min-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding-bottom: 130px;
+}
+
+.products-showcase .showcase .card .project-url {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.products-showcase .showcase .card .card__content {
+  margin-left: 5%;
+  width: 50%;
+  padding: 50px 50px 0 0;
+}
+
+.products-showcase .showcase .card .card__content h2 {
+  margin-bottom: 40px;
+}
+
+.products-showcase .showcase .card .card__content p {
+  font-size: clamp(16px, 2vw, 18px);
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 30px;
+}
+
+.products-showcase .showcase .card .card__image {
+  padding: 50px 0 0;
+  width: 50%;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .products-showcase {
+    background: #14151F;
+  }
+  .products-showcase .showcase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow-x: hidden;
+  }
+  .products-showcase .showcase .card {
+    width: 100vw;
+    height: 100%;
+    min-width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    padding-bottom: 130px;
+  }
+  .products-showcase .showcase .card .project-url {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .products-showcase .showcase .card .card__content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px 70px 30px 20px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .products-showcase .showcase .card .card__content h2 {
+    margin-bottom: 30px;
+  }
+  .products-showcase .showcase .card .card__content p {
+    font-size: clamp(16px, 2vw, 18px);
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+  }
+  .products-showcase .showcase .card .card__image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 30px 20px;
+    width: 100%;
+    margin-right: 100px;
   }
 }
 /*# sourceMappingURL=products.css.map */

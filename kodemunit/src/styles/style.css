@@ -488,7 +488,7 @@ header.header .container nav ul li a.link.active::before {
     margin-right: 30px;
   }
   .banner .container .image-container {
-    margin-top: -50px;
+    margin-top: -20px;
     padding: 0;
     width: 100%;
     min-width: 100%;
