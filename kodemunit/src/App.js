@@ -16,7 +16,7 @@ import Footer from "./components/Footer"
 import SearchResults from "./components/SearchResults"
 
 // styles
-import "./styles/style.css"
+import "./styles/style.sass"
 
 function App() {
   return (
