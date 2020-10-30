@@ -8,6 +8,9 @@ import Clients from "../components/home/Clients"
 import Testimonies from "../components/home/Testimonies"
 // import Products from "../components/home/Products"
 
+// styles
+import "../styles/pages/home.sass"
+
 const Home = () => {
   return (
     <div className="page home-page">

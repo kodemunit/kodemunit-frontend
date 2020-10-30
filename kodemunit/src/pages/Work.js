@@ -5,6 +5,9 @@ import Banner from "../components/Banner"
 import WorkSvg from "../components/work/WorkSvg"
 import WorkShowcase from "../components/work/WorkShowcase"
 
+// styles
+import "../styles/pages/work.sass"
+
 const Work = () => {
   return (
     <div className="page work-showcase-page">

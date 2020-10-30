@@ -4,6 +4,9 @@ import React from "react"
 import Form from "../components/contact/Form"
 import ContactDetails from "../components/contact/ContactDetails"
 
+// styles
+import "../styles/pages/contact.sass"
+
 const Contact = () => {
   return (
     <div className="contact-page page">

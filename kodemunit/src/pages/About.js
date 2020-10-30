@@ -1,11 +1,14 @@
-import React from "react";
+import React from "react"
 
 // components
-import Banner from "../components/Banner";
-import AboutSvg from "../components/about/AboutSvg";
-import Mission from "../components/about/Mission";
-import Vision from "../components/about/Vision";
-import Team from "../components/about/Team";
+import Banner from "../components/Banner"
+import AboutSvg from "../components/about/AboutSvg"
+import Mission from "../components/about/Mission"
+import Vision from "../components/about/Vision"
+import Team from "../components/about/Team"
+
+// styles
+import "../styles/pages/about.sass"
 
 const About = () => {
   return (
@@ -22,7 +25,7 @@ const About = () => {
       <Vision />
       <Team />
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About
