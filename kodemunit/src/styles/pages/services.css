@@ -146,10 +146,14 @@
 }
 
 .service-list .container .showcase ul li .accordion__content p {
-  padding: 20px 0;
+  padding: 20px 20px;
+  margin: 10px 0;
   font-size: clamp(14px, 2vw, 18px);
   line-height: 24px;
   color: #ffffffaf;
+  -webkit-box-shadow: inset -3px -4px 4px rgba(255, 255, 255, 0.25), inset 3px 4px 4px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: inset -3px -4px 4px rgba(255, 255, 255, 0.25), inset 3px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
 }
 
 .process {
