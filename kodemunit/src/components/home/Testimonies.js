@@ -1,7 +1,7 @@
-import React, {useState} from "react"
-import {FaQuoteLeft} from "react-icons/all"
+import React from "react"
+import { FaQuoteLeft } from "react-icons/all"
+// import SwiperCore, { coverflowEffect } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
-
 
 // avatars
 import ceeptz from "../../assets/images/avatars/ceeptz.png"
@@ -43,21 +43,29 @@ let testimonies = [
   },
 ]
 
+// SwiperCore.use([])
+
 const Testimonies = () => {
-  const [drag, setDrag] = useState(false)
-  const handleDrag = () => {
-    setDrag(true)
-  }
   return (
     <section className="testimonials">
       <h2>What our clients say about us</h2>
       <div className="container">
-        <div className={drag? "dragged showcase": "showcase"} onDragCapture={handleDrag}>
+        <div
+          className="showcase"
+        >
           <Swiper
             spaceBetween={0}
             // centeredSlides={true}
             // a11y={true}
             // keyboardControl={true}
+            effect="coverflow"
+            coverflowEffect="" //{
+            // ((rotate = 50),
+            // (stretch = 0),
+            // (depth = 100),
+            // (modifier = 1),
+            // (slideShadows = true))
+            // }
             grabCursor={true}
             breakpoints={{
               768: {
@@ -74,7 +82,8 @@ const Testimonies = () => {
               <SwiperSlide key={index}>
                 <article className="card">
                   <p>
-                    <FaQuoteLeft className="icon" />{testimony}
+                    <FaQuoteLeft className="icon" />
+                    {testimony}
                   </p>
                   <h2>{name}</h2>
                   <h3>{title}</h3>

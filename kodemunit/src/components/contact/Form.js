@@ -14,6 +14,8 @@ const Form = () => {
 
   const [errors, setErrors] = useState(null)
 
+  const [loading, setLoading] = useState(false)
+
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData({ ...formData, [name]: value })
@@ -21,6 +23,7 @@ const Form = () => {
   }
   const handleSubmit = (e) => {
     e.preventDefault()
+    setLoading(true)
     if (!formData.email.match(emailReg) || formData.msg.length <= 10) {
       let { value } = e.target
       switch (value) {
@@ -40,8 +43,10 @@ const Form = () => {
           ...errors,
           msg: "Please enter Atleast 40 chars",
         })
+        setLoading(false)
     } else {
-      alert("Submitted")
+      setLoading(false)
+      // alert("Submitted")
     }
     console.log(errors)
   }
@@ -103,7 +108,7 @@ const Form = () => {
         {errors && <p>There are errors in your Form</p>}
         <div className="btns">
           <button type="submit" className="btn btn-primary">
-            Submit
+            {loading? "Submitting...": "Submit"}
           </button>
         </div>
       </form>
